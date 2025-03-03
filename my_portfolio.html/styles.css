@@ -1,0 +1,257 @@
+@charset "UTF-8";
+
+
+body {
+    font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+    font-size: 14px;
+    background-size: cover;
+    background-image: url(Images/back.png);	
+    }
+
+
+
+#container {
+	width: 1280px;
+	height: auto;
+	background-color: rgba(255,255,255,1.00);	
+	margin: auto;
+}
+
+p {
+	font-family: "new-zen", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+}
+
+article {
+    margin-bottom: 50px;	
+}
+
+/*Float the Aside so it displays next to Main*/
+aside {
+    width: 150px;
+    height: 1200px;
+    float: left;
+    background-color: rgba(177,189,222,1.00);
+}
+
+header {
+    width: 793px;
+    height: 260px;
+    background-image: url(Images/my_world_logo.png);
+    font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+    font-style: normal;
+    background-position: 995% 236%;
+}
+
+ h1 {
+    color: rgba(158,161,208,1.00);   
+	font-family: "refrigerator-deluxe", sans-serif;
+	font-weight: 300;
+	font-style: normal;
+	font-size: 24pt;
+    }
+
+h3 {
+    font-size: 12pt;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+ }
+
+main {
+    width: 1110px;
+    float: left;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    background-color: rgba(255,255,255,1.00);
+    height: 1600px;
+}
+
+img {
+    float: right;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+
+.floatLeft {
+	float: left;
+}
+
+nav {
+    width: 1280px;
+    height: 34px;
+    position: fixed;
+    top: 0px;
+    background-color: rgba(255,255,255,1.00);
+}
+
+#container nav li {
+    display: block;
+    list-style-type: none;
+    float: left;
+    margin: 0px 60px 0px 0px;
+    width: 60px;
+    font-family: playwrite-cc-in, sans-serif;
+    font-size: 13pt;
+    background-color: rgba(255,255,255,1.00);	
+}
+
+#container nav ul {
+	margin: auto;
+	width: 500px;
+}
+
+nav a:link {
+    color: rgba(163,164,208,1);
+	padding: 10px;
+    text-decoration: none;
+}
+nav a:visited {
+    text-decoration: none;
+    color: rgba(142,112,166,1);
+}
+nav a:hover {
+    text-decoration: none;
+    color: rgba(255,255,255,1.00);
+	background-color: rgba(163,164,208,1);
+	padding: 10px;
+	border-radius: 20px;
+}
+nav a:active {
+    text-decoration: none;
+    color: rgba(84,94,117,1);
+}
+
+
+.submit_btn {
+    width: 180px;
+    height: 30px;
+    border-radius: 10px;
+    background-color: rgba(183,184,222,1.00);
+    color: rgba(255,255,255,1.00);
+    font-size: 16px;
+}
+
+.submit_btn:hover {
+	 -webkit-box-shadow: 6px 6px 35px 1px rgba(79,79,79,1.00);
+	 box-shadow: 6px 6px 35px 1px rgba(79,79,79,1.00);
+
+	
+}
+
+
+th {
+    border: 5px;
+    border-radius: 20px;
+    border-spacing: 10px 10px;
+	}
+	
+td {
+		width: 4px;
+		background-color: #FFFFFF;
+    border: 2px solid #383838;
+    border-radius: 20px;
+    border-spacing: 10px 10px;
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+		
+	}
+
+footer {
+    width: 1280px;
+    height: 50px;
+    background-color: rgba(177,189,222,1.00);
+    float: left;
+    clear: none;
+}
+
+	
+.column {
+    width: 250px;
+    height: 750px;
+    float: left;
+    margin-left: 60px;
+}
+video {
+    width: 600px;
+    margin: auto;
+    height: 600px;
+    padding-top: 148px;
+    padding-bottom: 0px;
+}
+/*rules for i-pad*/
+@media (max-width: 1024px){
+	#container {
+		width: 768px;
+	}
+	
+	header {
+		width: 768px;
+	}
+	
+		nav {
+		width: 768px;
+	}
+	
+	main {
+		width: 598px;
+		height: 2500px;
+	}
+	
+	footer {
+		width: 768px;
+	}
+	
+	.column {
+		margin: 0px 20px 0px 25px;
+	}
+}
+/*rules for phone*/
+@media only screen and (max-width:375px){
+	
+		#container {
+		width: 300px;
+	}
+	
+	header {
+    width: 320px;
+    background-image: url(Images/my_world_logo.png);
+    background-position: -198px center;
+	}
+	
+	nav {
+    width: 320px;
+    height: 200px;
+    position: static;
+	}
+	
+	
+	main {
+		width: 300px;
+	}
+	
+	footer {
+		width: 300px;
+	}
+	
+	aside{
+		display: none;
+	}
+	
+	#container nav li {
+    display: list-item;
+    list-style-type: none;
+    float: none;
+    margin: 0px 0px 20px 0px;
+    width: 260px;
+	text-align: center;	
+}
+}
